@@ -2,136 +2,121 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Main Site - Testing</title>
-    <!--boostrap css including-->
+    <title>Invoice Template</title>
     <link href="./css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
-    <div class="container">
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5 mt-5">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
+    <div class="container header-font">
+        <div class="row">
+            <div class="col-12 invoice-font">
+                <div>Invoice</div>
+                <div>Nr FA/01/2024</div>
             </div>
-        </nav>
+        </div>
 
-        <div class="container text-center mt-5 mb-5">
-            <div class="row">
-                <div class="col-12 col-sm-6 col-lg-3">
-                    Column1 dfwerwewrwerwerwerwerwerwerwer
+        <div class="row mt-5">
+            <div class="col-5">
+                <img src="./images/sigma_wolf.jpg" alt="This should be a picture of sigma wolf logo but something is not right." class="logo" />
+            </div>
+
+            <div class="col-5 offset-3 invoice-information">
+                <div class="top-line">
+                    <div class="top-small-caption">Data sprzedaży:</div>
+                    <div>12-01-2024</div>
                 </div>
-                <div class="col-12 col-lg-3">
-                    Column2 werwerwrwerwerwerwerwerwerwwer
+                <div class="top-line">
+                    <div class="top-small-caption">Termin sprzedaży:</div>
+                    <div>12-01-2024</div>
                 </div>
-                <div class="col-12 col-lg-3">
-                    Column3 ewrwrwerwerwerwerwerwerwerwerwer
+                <div class="top-line">
+                    <div class="top-small-caption">Sposób zapłaty:</div>
+                    <div>Przelew</div>
                 </div>
             </div>
         </div>
 
-        <button type="button" class="btn btn-outline-primary" onclick="run()">JS RUN</button>
-        <div>
-            <u>My first <strong>HTML</strong> website!</u>
-
-            <br />
-            <h1 id="main-header">HTML!</h1>
-            <br /><br />
+        <div class="row mt-5">
+            <div class="col-5 invoice-information">
+                <div class="top-line">
+                    <div class="top-small-caption">Seller</div>
+                    <div>Kasjan Nabój</div>
+                    <div>Ul. Kasztanowa 12312</div>
+                    <div>43-400 Warszawa</div>
+                    <div>E-mail: nabujkasjan@gmail.com</div>
+                </div>
+            </div>
+            <div class="col-5 offset-2 invoice-information">
+                <div class="top-line">
+                    <div class="top-small-caption">Nabywca</div>
+                    <div>Krystian L</div>
+                    <div>Ul. Kasztanowa 12312</div>
+                    <div>43-400 Rataje</div>
+                    <div>E-mail: keystianl@gmail.com</div>
+                </div>
+            </div>
         </div>
 
-        <table class="table table-success table-striped-columns mt-5 md-5">
-            <tr>
-                <td align="center" bgcolor="lightgrey">Title</td>
-                <td align="center" bgcolor="lightgrey">Description</td>
-                <td align="center" bgcolor="lightgrey">Value</td>
-            </tr>
-            <tr>
-                <td align="center">Title 2</td>
-                <td align="center">Desc 2</td>
-                <td align="center">100$</td>
-            </tr>
+        <table class="table table-bordered mt-5">
+            <thead>
+                <tr>
+                    <td>Lp</td>
+                    <td>Product</td>
+                    <td>Quantity</td>
+                    <td>Value</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Position 1</td>
+                    <td>12</td>
+                    <td>1000 zł</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Position 1</td>
+                    <td>12</td>
+                    <td>1000 zł</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Position 1</td>
+                    <td>12</td>
+                    <td>1000 zł</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Position 1</td>
+                    <td>12</td>
+                    <td>1000 zł</td>
+                </tr>
+            </tbody>
         </table>
 
-
-        <h2 class="title-one">Title 3</h2>
-
-        <a class="link-japko" href="https://www.google.com/search?q=google&rlz=1C1GCEU_plPL1097PL1125&oq=google&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyEwgBEC4YgwEYxwEYsQMY0QMYgAQyEAgCEAAYgwEYsQMYyQMYgAQyDQgDEAAYgwEYsQMYgAQyDQgEEAAYgwEYsQMYgAQyDQgFEAAYgwEYsQMYgAQyBggGEEUYPDIGCAcQRRg80gEHNTgxajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8">Google</a>
-
-        <br />
-
-        <img src="./jbl.jpg" alt="Here should be picture of apple but something went wrong!" />
-
-        <ul class="two">
-            <li style="background-color:blue">Point 1</li>
-            <li>Point 2</li>
-            <li>Point 3</li>
-            <li>Point 4</li>
-        </ul>
-
-        <ul class="one">
-            <li style="background-color:blue">Point 1</li>
-            <li>Point 2</li>
-            <li>Point 3</li>
-            <li>Point 4</li>
-        </ul>
-
-        <button id="butt">Save</button>
-        <h3 class="mt-5 mb-3">Fill a form</h3>
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <div class="row">
+            <div class="col-12">
+                <div class="text-right">Value: <strong>9213,12 zł</strong></div>
+                <div class="text-left">Uwagi: Różne uwagi</div>
             </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-6">
+                <div>Wystawił:</div>
+                <div>Krzysiu Szpin</div>
+                <div>...........................</div>
             </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <div class="col-6">
+                <div>Odebrał:</div>
+                <div>Lasjan Nabuj</div>
+                <div>...........................</div>
             </div>
-            <button type="submit" class="btn btn-outline-primary">Submit</button>
-        </form>
+        </div>
+
     </div>
 
-
-    <script src="./js/jQuery.js" type="text/javascript"></script>
-    <script src="./js/bootstrap.js" type="text/javascript"></script>
-    <script src="./js/script.js" type="text/javascript"></script>
 </body>
 </html>
-
-

@@ -1,16 +1,47 @@
-div {
-    font-size: 15px;
+.invoice-font {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 15px;
+    color: black !important;
 }
 
-.title-one {
-    text-align: left;
-}
-
-#butt {
-    font-size: 25px;
-    background-color: rebeccapurple;
-}
-
-ul {
+.header-font {
+    font-size: 22px;
+    text-transform: uppercase;
     font-weight: bold;
+    text-align: center;
+}
+
+.logo {
+    max-width: 125px;
+    max-height: 125px;
+    display: block;
+    margin: 0 auto;
+}
+
+.invoice-information {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.top-line {
+    border-top: 1px solid black;
+    margin-top: 5px;
+}
+
+.top-small-caption {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
 }
